@@ -10,7 +10,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let restaurant = ["McDonalds","Hot Pot","Papa Johns","Subway"]
-    let food = ["sandwiches","burger","pizza","beverage"]
+    var foodEmpty:[String] = []
+    let food = [["sandwiches","burger","fries","beverage"],["beef","vege","noodle","beverage"],["chicken","fries","pizza","beverage"],["bread","meat","sauce","beverage"]]
 
     @IBOutlet weak var tblViewTop: UITableView!
     
@@ -25,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if tableView == tblViewTop{
             return restaurant.count
         }else{
-            return food.count
+            return foodEmpty.count
         }
     }
     
@@ -36,10 +37,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            cell.textLabel?.text = food[indexPath.row]
+            cell.textLabel?.text = foodEmpty[indexPath.row]
             return cell
         }
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == tblViewTop{
+            foodEmpty = food[indexPath[1]]
+            self.tblViewBottom.reloadData()
+        }
     }
     
 }
