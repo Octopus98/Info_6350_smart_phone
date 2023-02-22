@@ -11,46 +11,43 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AssignmentTableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AssignmentTblViewXib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RXV-wi-0u2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-Yo-diF">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="FAX-ht-yPU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="9hp-sp-QvA">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FAX-ht-yPU" id="S5C-Tf-n9L">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9hp-sp-QvA" id="3Y9-at-Tgf">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5lV-cV-jsh"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mD7-Iu-d2a"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qLL-WJ-hyn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MN5-gG-9Or"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RXV-wi-0u2" secondAttribute="trailing" id="9jL-jg-MIn"/>
-                            <constraint firstItem="RXV-wi-0u2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BKg-pV-1ul"/>
-                            <constraint firstItem="RXV-wi-0u2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M3c-fU-BI7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RXV-wi-0u2" secondAttribute="bottom" id="Srj-2h-0rH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sSf-Yo-diF" secondAttribute="trailing" id="QIA-Ml-Ubk"/>
+                            <constraint firstItem="sSf-Yo-diF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T4Q-w8-4Jq"/>
+                            <constraint firstItem="sSf-Yo-diF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eJg-9o-3Gf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sSf-Yo-diF" secondAttribute="bottom" id="qRA-Wj-w9F"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="tblView" destination="RXV-wi-0u2" id="eek-ae-naV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="-27"/>
+            <point key="canvasLocation" x="132" y="-27"/>
         </scene>
     </scenes>
     <resources>
